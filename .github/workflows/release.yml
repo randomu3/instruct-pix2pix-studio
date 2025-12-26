@@ -82,7 +82,7 @@ jobs:
             -x "*.pyc" -x "__pycache__/*" -x "*.egg-info/*"
             
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           name: "InstructPix2Pix Studio ${{ steps.tag_info.outputs.tag }}"
           body_path: changelog.md
